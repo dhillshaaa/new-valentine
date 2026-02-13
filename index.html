@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>love</title>
+        <style>
+            body{
+                background:url(images/pink.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin:0;
+            }
+            .box{
+                
+                background:url(images/pinkk.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+                border-radius: 10px;
+                width:600px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .box h3{
+                font-size: 2rem;
+                color: rgb(119, 50, 50);
+                text-align: center;
+                margin-bottom: 20px;
+                
+            }
+            .button{
+                display: flex;
+                gap:30px;
+            }
+            .button button{
+                background-color:white;
+            
+                width:100px;
+                padding:10px;
+                border: 2px solid rgb(245, 206, 206);
+                border-radius: 30px;
+                cursor: pointer;
+                font-weight: bolder;
+                font-size: 16px;
+                color:rgb(145, 72, 72);
+            }
+            button:hover{
+                background-color:rgb(249, 214, 214);
+            }
+            .box img{
+                width: 110px;
+                height: 120px;
+                border:none;
+                border-radius: 25px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            .box span{
+                
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <div class="box">
+            <h3>Will you be my valentine <span>Mr.Rithick Pranesh</span>??</h3>
+            <img src="download.jpg" alt="picture">
+            <div class="button">
+                <button class="yes">Yes</button>
+                 <button class="no">No</button>
+            </div>
+
+
+        </div>
+    <script>
+        const yesBtn = document.querySelector(".yes");
+        const noBtn = document.querySelector(".no");
+
+        yesBtn.addEventListener("click", () => {
+            window.location.href = "yes.html";
+     });
+
+        noBtn.addEventListener("mouseover", () => {
+            const x = Math.random() * 300 - 150;
+            const y = Math.random() * 200 - 100;
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+
+
+
+    </body>
+</html>
